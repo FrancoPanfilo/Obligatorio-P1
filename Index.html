@@ -1,0 +1,203 @@
+<!--Sebastian Garcia 281637 y Alfonso Lopez 293449-->
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title> TechnoEvent </title>
+      <script src="js/clases.js"></script>
+      <script src="js/funciones.js"></script>
+      <link rel="stylesheet" href="Estilos.css">
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <header>
+         <h1>TechnoEvent </h1>
+      </header>
+      <details>
+         <summary>Informacion sobre este trabajo</summary>
+         <p>Obligatorio de programacion 1</p>
+         <p>Sistema creado por:Sebastian Garcia (281637) y Alfonso Lopez (293449)</p>
+         <p>Grupo: M1A</p>
+         <p>Segundo semestre 2022</p>
+      </details>
+      <section id="Sec1">
+         <h3 id="TituloPlanif"> Planificación</h3>
+         <div id="div1">
+            <table>
+               <tr>
+                  <th>Dia y hora</th>
+                  <th>Presentación</th>
+               </tr>
+               <tr>
+                  <td>1 - 8:00</td>
+                  <td rowspan="2"> 1era Presentación del día 1 de 30 minutos</td>
+               </tr>
+               <tr>
+                  <td>1 - 8:15</td>
+               </tr>
+               <tr>
+                  <td>1 - 8:30</td>
+                  <td rowspan="3">2da Presentación del día 1 de 45 minutos</td>
+               </tr>
+               <tr>
+                  <td>1 - 8:45</td>
+               </tr>
+               <tr>
+                  <td>1 - 9:00</td>
+               </tr>
+               <tr>
+                  <td>1 - 9:15</td>
+                  <td>3ra Presentación del día 1 de 15 minutos</td>
+               </tr>
+               <tr>
+                  <td>2 - 8:00</td>
+                  <td>1era Presentación del día 2 de 15 minutos</td>
+               </tr>
+               <tr>
+                  <td>2 - 8:15</td>
+                  <td rowspan="2">2da Presentación del día 2 de 30 minutos</td>
+               </tr>
+               <tr>
+                  <td>2 - 8:30</td>
+               </tr>
+               <tr>
+                  <td>3 - 8:00</td>
+                  <td rowspan="4">1era Presentación del día 3 de 60 minutos</td>
+               </tr>
+               <tr>
+                  <td>3 - 8:15</td>
+               </tr>
+               <tr>
+                  <td>3 - 8:30</td>
+               </tr>
+               <tr>
+                  <td>3 - 8:45</td>
+               </tr>
+               <tr>
+                  <td>4 - 8:00</td>
+                  <td rowspan="3">1era Presentación del día 4 de 45 minutos</td>
+               </tr>
+               <tr>
+                  <td>4 - 8:15</td>
+               </tr>
+               <tr>
+                  <td>4 - 8:30</td>
+               </tr>
+               <tr>
+                  <td>5 - 8:00</td>
+                  <td rowspan="4">1era Presentación del día 5 de 60 minutos</td>
+               </tr>
+               <tr>
+                  <td>5 - 8:15</td>
+               </tr>
+               <tr>
+                  <td>5 - 8:30</td>
+               </tr>
+               <tr>
+                  <td>5 - 8:45</td>
+               </tr>
+            </table>
+         </div>
+      </section>
+      <section id="Sec2">
+         <h3 id="TituloAltas">Altas</h3>
+         <article class="uno">
+            <h3>Alta de Empresa</h3>
+            <form id="formularioAltadeEmpresa">
+               <label for="nombreAltadeEmpresa" id="nombre">Nombre</label> <input type="text" placeholder="ingrese nombre de empresa" maxlength="30" id="nombreAltadeEmpresa">
+               <br>
+               <label for="direccionAltadeEmpresa" id="dirección">Dirección </label> <input type="text" maxlength="30" id="direccionAltadeEmpresa">
+               <br>
+               <label for="telefonoAltadeEmpresa" id="telefono">Telefono</label> <input type="text" maxlength="30" id="telefonoAltadeEmpresa">
+               <br>
+               <label>Origen:</label>
+               <br>
+               <input type="radio" name="origen" value="1" id="nacionalAltas" checked>
+               <label for="nacionalAltas">nacional</label>
+               <br>
+               <input type="radio" name="origen" value="2" id="extranjeraAltas">
+               <label for="extranjeraAltas">extranjera</label>
+               <br>
+               <input type="button" id="BotonAgregar" value="Agregar" class="button">
+            </form>
+         </article>
+         <article class="dos">
+            <h3>Alta de Presentacion</h3>
+            <form id="formularioAltadePresentacion">
+               <label for="empresaAltadePresentacion">Empresa</label>
+               <select name="empresa" id="empresaAltadePresentacion">
+                  <option id="sinDatos" value ="sinDatos" selected>Sin Datos</option>
+               </select>
+               <br>
+               <label for="tituloAltadePresentacion" id="titulo">Titulo</label> <input type="text" maxlength="30" id="tituloAltadePresentacion">
+               <br>
+               <label for="descripcionAltadePresentacion" id="descripcion">Descripción</label> <input type="text" maxlength="30" id="descripcionAltadePresentacion">
+               <br>
+               <label for="temaAltadePresentacion">Tema</label>
+               <select name="tema" id="temaAltadePresentacion">
+                  <option value="inteligenciaArtificial" selected>Inteligencia Artificial</option>
+                  <option value="bigData">Big Data</option>
+                  <option value="mobile">Mobile</option>
+                  <option value="redes">Redes</option>
+                  <option value="seguridad">Seguridad</option>
+                  <option value="hardware">Hardware</option>
+               </select>
+               <br>
+               <label for="diaAltadePresentacion">Día</label>
+               <select name="dia" id="diaAltadePresentacion">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+               <br>
+               <label for="duracionAltadePresentacion">Duración</label>
+               <select name="duracion" id="duracionAltadePresentacion">
+                  <option value="15min" selected>15 minutos</option>
+                  <option value="30min">30 minutos</option>
+                  <option value="45min">45 minutos</option>
+                  <option value="60min">60 minutos</option>
+                  <option value="120min">120 minutos</option>
+                  <option value="180min">180 minutos</option>
+               </select>
+               <br>
+               <input type="button" id ="BotonAgregar2" value="Agregar" class="button">
+            </form>
+         </article>
+      </section>
+      <section id="Sec3">
+         <h3 id="TituloCyE">Consultas y Estadisticas</h3>
+         <h3>Presentaciones con...</h3>
+         <form>
+            <label for="PalabrasParaBuscar" id="Palabras">Palabras a buscar:</label>
+            <input type="text" maxlength="30" id="PalabrasParaBuscar">
+            <input type="checkbox" id="ConsultarContieneTodas" name="consultar" value="1">
+            <label for="ConsultarContieneTodas">Contiene Todas</label>
+            <input type="button" id="botonconsultar" value="Consultar" class="button">
+            <ul>
+               <li>Sin datos</li>
+            </ul>
+         </form>
+         <h3>Empresas Registradas</h3>
+         <ul id="listaEmpresasRegistradas">
+            <li>Sin datos</li>
+         </ul>
+         <h3>Duracion Promedio:</h3>
+         <p>Sin datos</p>
+         <h3>Empresas con la maxima cantidad de presentaciones:</h3>
+         <ul id="listaMaxPresentaciones">
+            <li>Sin datos</li>
+         </ul>
+         <h3>Total por Tipo:</h3>
+         <ol>
+            <li>Inteligencia Artificial - sin datos</li>
+            <li>Big Data - sin datos</li>
+            <li>Mobile - sin datos</li>
+            <li>Redes - sin datos</li>
+            <li>Seguridad - sin datos</li>
+            <li>Hardware - sin datos</li>
+         </ol>
+      </section>
+      <p id="lineaFinal">Programacion 1 - Obligatorio 2do Semestre 2022 -<a href= "https://www.ort.edu.uy/">Universidad ORT Uruguay</a></p>
+   </body>
+</html>

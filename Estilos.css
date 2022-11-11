@@ -1,0 +1,132 @@
+/*Sebastian Garcia 281637 y Alfonso Lopez 293449*/
+body{
+	font-family:arial;
+}
+
+#div1 {
+     overflow-y:scroll;
+     height:200px;
+}
+#div1 table,th,td {
+	width:80%;
+}
+th{
+	background-color:grey;
+}
+header{
+	text-align:center;
+	background-image:url("https://img.freepik.com/foto-gratis/solido-abstracto-fondo-amarillo-brillante-sitio-pared-estudio-pendiente_1258-54540.jpg?w=2000");
+	border-radius:15px;
+}
+#TituloPlanif{
+	text-align: center;
+	background:#A3BD39;
+	border-radius:15px;
+}
+#TituloAltas{
+	text-align:center;
+	background:#A3BD39;
+	border-radius:15px;
+}
+
+#TituloCyE{
+	text-align: center;
+	background:#A3BD39;
+	border-radius:15px;
+}
+
+#lineaFinal{
+	text-align: center;
+	background:#A3BD39;
+	border-radius:15px;
+}
+#nombreAltadeEmpresa{
+	margin-left:90px;
+	width:200px;
+	height:12px;
+}
+#direccionAltadeEmpresa{
+	margin-left:79px;
+	width:200px;
+	height:12px;
+}
+#telefonoAltadeEmpresa{
+	margin-left:88px;
+	width:200px;
+	height:12px;
+}
+#empresaAltadePresentacion{
+	margin-left:80px;
+	width:80px;
+	height:20px;
+}
+#tituloAltadePresentacion{
+	margin-left:108px;
+	width:200px;
+	height:12px;
+}
+#descripcionAltadePresentacion{
+	margin-left:60px;
+	width:200px;
+	height:12px;
+}
+#temaAltadePresentacion{
+	margin-left:106px;
+	width:140px;
+	height:20px;
+}
+#diaAltadePresentacion{
+	margin-left:119px;
+	width:30px;
+	height:20px;
+}
+#duracionAltadePresentacion{
+	margin-left:79px;
+	width:90px;
+	height:20px;
+}
+#PalabrasParaBuscar{
+	margin-left:25px;
+}
+#ConsultarContieneTodas{
+	margin-right:70px;
+	margin-left:80px;
+}
+table{
+	text-align:center;
+	margin:0 auto;
+	border:1px solid;
+	border-collapse:collapse;
+}
+th,td{
+	text-align:center;
+	border:1px solid;
+	width:5px;
+}
+.button{
+    padding:0px 80px 0px 80px;
+}
+#botonconsultar{
+	padding:0px 80px 0px 80px;
+	margin-left:40px;
+}
+.uno{
+	float:left;
+}
+
+.dos{
+	float:right;
+	margin-bottom: 2%;
+}
+
+#nacionalAltas{
+	margin-left:80px;
+	margin-right:80px;
+}
+#extranjeraAltas{
+	margin-left:80px;
+	margin-right:80px;
+}
+#Sec3{
+	clear:both;
+}
